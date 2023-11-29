@@ -1,12 +1,11 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Footer from './Footer';
+
 
 const MainLayout = ({ children }) => {
   return (
     <View style={styles.container}>
       {children}
-      <Footer />
     </View>
   );
 };
