@@ -77,7 +77,7 @@ function AddForm({ addTask }) {
         />
       )}
 
-      <Button title="Add" onPress={handleAddTask} />
+      <Button title="Add" onPress={handleAddTask} color="#008000"/>
     </View>
   );
 }

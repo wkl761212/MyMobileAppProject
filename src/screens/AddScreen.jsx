@@ -12,11 +12,13 @@ function AddScreen({ navigation }) {
 
   return (
     <MainLayout>
-      <SafeAreaView>
-        <AddForm addTask={addTask} />
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFE0', padding: 10 }}>
+        <AddForm style={{ padding: 20, backgroundColor: '#fff', borderRadius: 10 }} 
+        addTask={addTask} />
         {/* Add some space between AddForm and the button */}
         <View style={{ marginTop: 20 }}>
-          <Button title="Back Home" onPress={() => navigation.navigate('Home')} />
+          <Button title="Back Home"  color="#007bff" onPress={() => navigation.navigate('Home')} />
+          <Button title="Go to Profile" onPress={() => navigation.navigate('Profile')} />
         </View>
       </SafeAreaView>
     </MainLayout>
